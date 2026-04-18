@@ -5,9 +5,9 @@ from services.budget_manager import BudgetManager
 from storage.storage import Storage
 from utils.analytics import Analytics
 
-# =====================
+
 # INIT
-# =====================
+
 storage = Storage()
 manager = BudgetManager()
 
@@ -16,9 +16,9 @@ analytics = Analytics(manager.transactions)
 
 st.title(" Personal Budget Tracker")
 
-# =====================
+
 # AJOUT TRANSACTION
-# =====================
+
 st.header(" Ajouter une transaction")
 
 type_choice = st.selectbox("Type", ["income", "expense"])
