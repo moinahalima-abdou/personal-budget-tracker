@@ -34,11 +34,3 @@ class BudgetManager:
     def get_total_expense(self):
         return sum(t.amount for t in self.transactions if t.type == "expense")
     
-manager = BudgetManager()
-
-manager.add_transaction("income", 1000, "salary")
-manager.add_transaction("expense", 50, "food")
-
-manager.list_transactions()
-
-print("Solde:", manager.get_balance())
